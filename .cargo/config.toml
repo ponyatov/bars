@@ -1,5 +1,5 @@
 [build]
-target    = "./i386-pc-none.json"
+target    = ".cargo/i386-pc-none.json"
 jobs      = 4
 
 [target.x86_64-unknown-linux-gnu]
@@ -9,6 +9,9 @@ linker    = "x86_64-linux-gnu-gcc"
 [target.i386-pc-none]
 rustflags = ["--cfg", "feature=\"pc,i486,none\""]
 linker    = "i686-linux-gnu-gcc"
+
+[unstable]
+build-std = ["core", "compiler_builtins"]
 
 [source.crates-io]
 replace-with = 'ustc'

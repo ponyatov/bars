@@ -21,8 +21,10 @@
         "daohong-emilio.yash",
         "rreverser.ragel",
         // embedded
-        "dan-c-underwood.arm",
         "zixuanwang.linkerscript",
+        "basdp.language-gas-x86",
+        "ms-vscode.hexeditor",
+        "dan-c-underwood.arm",
         "ms-vscode.vscode-serial-monitor",
         // "espressif.esp-idf-extension",
         // Python
@@ -33,6 +35,9 @@
         "rust-lang.rust-analyzer",
         "tamasfe.even-better-toml",
         "vadimcn.vscode-lldb",
+        // LLVM
+        "rreverser.llvm",
+        "revng.llvm-ir",
         // OCaml
         "ocamllabs.ocaml-platform",
     ]

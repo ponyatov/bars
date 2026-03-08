@@ -7,6 +7,10 @@ license         =  "MIT"
 repository      =  "https://github.com/ponyatov/bars"
 edition         =  "2024"
 
+[lib]
+name = "bars"
+path = "src/ba.rs"
+
 [dependencies]
 const_format    = "0.2"
 
