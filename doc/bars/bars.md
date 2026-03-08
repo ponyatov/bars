@@ -10,3 +10,5 @@ github: https://github.com/ponyatov/bars
   - i386
 
 ![[bars/bib]]
+
+# [[bare-metal target]]

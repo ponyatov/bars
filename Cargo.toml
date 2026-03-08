@@ -7,13 +7,19 @@ license         =  "MIT"
 repository      =  "https://github.com/ponyatov/bars"
 edition         =  "2024"
 
-[lib]
+[[bin]]
 name = "bars"
-path = "src/ba.rs"
+path = "src/bars.rs"
 
 [dependencies]
-const_format    = "0.2"
+
+[target.'cfg(all(target_arch = "x86"))'.dependencies]
+x86             = "0.52"
+raw-cpuid       = "11.6"
+
+[target.'cfg(target_os = "none")'.dependencies]
 
 [target.'cfg(target_os = "linux")'.dependencies]
+const_format    = "0.2"
 libc            = "0.2"
 memmap2         = "0.9"

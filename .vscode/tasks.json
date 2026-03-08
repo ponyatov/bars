@@ -60,18 +60,9 @@
             "group"          : {"kind": "build", "isDefault": true}
         },
         {
-            "label"          : "dune: build",
+            "label"          : "cargo: i386-pc-none",
             "type"           : "shell",
-            "command"        : "dune build",
-            "problemMatcher" : [],
-            "presentation"   : {"showReuseMessage": true, "focus": true, "reveal": "silent", "close": false},
-            "group"          : {"kind": "build", "isDefault": true}
-        },
-        {
-            "label"          : "dune: test",
-            "type"           : "shell",
-            "command"        : "dune test",
-            "dependsOn"      : "dune: build",
+            "command"        : "cargo +nightly build -Z build-std=core --target .cargo/i386-pc-none.json",
             "problemMatcher" : [],
             "presentation"   : {"showReuseMessage": true, "focus": true, "reveal": "silent", "close": false},
             "group"          : {"kind": "build", "isDefault": true}
