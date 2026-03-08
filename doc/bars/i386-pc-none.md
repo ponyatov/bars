@@ -8,3 +8,4 @@ The target specification file, which you might name `i386-pc-none.json`, acts as
 
 ![[bars/config.toml]]
 ![[i386-pc-none.json]]
+

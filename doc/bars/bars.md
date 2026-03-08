@@ -11,4 +11,8 @@ github: https://github.com/ponyatov/bars
 
 ![[bars/bib]]
 
-# [[bare-metal target]]
+## [[bare-metal target]]
+## [[build command]]
+## [[bare Rust]]
+## [[panic handler]]
+## [[bars/multiboot]]

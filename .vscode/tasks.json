@@ -62,7 +62,7 @@
         {
             "label"          : "cargo: i386-pc-none",
             "type"           : "shell",
-            "command"        : "cargo +nightly build -Z build-std=core --target .cargo/i386-pc-none.json",
+            "command"        : "cargo +nightly run -Z build-std=core --target .cargo/i386-pc-none.json",
             "problemMatcher" : [],
             "presentation"   : {"showReuseMessage": true, "focus": true, "reveal": "silent", "close": false},
             "group"          : {"kind": "build", "isDefault": true}
